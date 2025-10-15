@@ -1,0 +1,27 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Network-inspired logo with "A" shape -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main "A" shape -->
+  <path d="M100 40 L150 160 L130 160 L120 130 L80 130 L70 160 L50 160 Z" fill="url(#logoGradient)"/>
+  <rect x="85" y="110" width="30" height="15" fill="white"/>
+  
+  <!-- Network nodes -->
+  <circle cx="60" cy="70" r="6" fill="#3B82F6"/>
+  <circle cx="140" cy="70" r="6" fill="#3B82F6"/>
+  <circle cx="100" cy="50" r="8" fill="#2563EB"/>
+  <circle cx="70" cy="100" r="5" fill="#60A5FA"/>
+  <circle cx="130" cy="100" r="5" fill="#60A5FA"/>
+  
+  <!-- Connection lines -->
+  <line x1="60" y1="70" x2="100" y2="50" stroke="#3B82F6" stroke-width="2" opacity="0.5"/>
+  <line x1="140" y1="70" x2="100" y2="50" stroke="#3B82F6" stroke-width="2" opacity="0.5"/>
+  <line x1="70" y1="100" x2="60" y2="70" stroke="#3B82F6" stroke-width="2" opacity="0.5"/>
+  <line x1="130" y1="100" x2="140" y2="70" stroke="#3B82F6" stroke-width="2" opacity="0.5"/>
+</svg>
+

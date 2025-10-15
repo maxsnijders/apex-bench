@@ -1,0 +1,77 @@
+Creative Commons Attribution 4.0 International License
+
+APEX-Bench Data and Documentation License
+
+===============================================================================
+
+All benchmark data, datasets, documentation, and related materials in this
+repository (excluding code) are licensed under the Creative Commons Attribution
+4.0 International License (CC BY 4.0).
+
+To view a copy of this license, visit:
+http://creativecommons.org/licenses/by/4.0/
+
+or send a letter to:
+Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+===============================================================================
+
+You are free to:
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material for any purpose,
+  even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license
+terms.
+
+Under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any
+  reasonable manner, but not in any way that suggests the licensor endorses
+  you or your use.
+
+- No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license
+  permits.
+
+Notices:
+
+- You do not have to comply with the license for elements of the material in
+  the public domain or where your use is permitted by an applicable exception
+  or limitation.
+
+- No warranties are given. The license may not give you all of the permissions
+  necessary for your intended use. For example, other rights such as publicity,
+  privacy, or moral rights may limit how you use the material.
+
+===============================================================================
+
+Attribution Guidelines:
+
+When using APEX-Bench data or documentation, please cite as:
+
+APEX-Bench Contributors. (2024). APEX-Bench: A Shared Standard for
+Evaluating AI in Planning and Control. Retrieved from
+https://github.com/apex-bench/apex-bench
+
+BibTeX:
+@misc{apexbench2024,
+title={APEX-Bench: A Shared Standard for Evaluating AI in Planning and Control},
+author={{APEX-Bench Contributors}},
+year={2024},
+howpublished={\url{https://github.com/apex-bench/apex-bench}},
+}
+
+===============================================================================
+
+This license applies to:
+
+- All files in /data/
+- All files in /public/schedules/
+- All documentation files (\*.md)
+- Benchmark definitions and metadata
+- Schedule files (.xer format)
+
+Code and software components remain under the Apache 2.0 license (see LICENSE).
