@@ -1,0 +1,27 @@
+ERMHDR	9.0	2024-10-14	Project Management	P6 Professional
+%T	PROJWBS
+%F	proj_id	wbs_id	proj_node_flag	obs_id	wbs_name	wbs_short_name	parent_wbs_id
+%R	1	1	Y	1	Industrial Facility	Industrial	
+%R	1	2	N	1	Building A - Production	ProdA	1
+%R	1	3	N	1	Building B - Warehouse	WareB	1
+
+%T	TASK
+%F	task_id	task_code	task_name	task_type	duration_type	proj_id	wbs_id	clndr_id	status_code	target_drtn_hr_cnt	zone
+%R	1	D1000	Foundation Slab A	TT_Task	DT_FixDrtn	1	2	1	TK_NotStart	200.00	Zone-A
+%R	2	D1010	Concrete Curing A	TT_Task	DT_FixDrtn	1	2	1	TK_NotStart	168.00	Zone-A
+%R	3	D1020	Electrical Rough-in A	TT_Task	DT_FixDrtn	1	2	1	TK_NotStart	120.00	Zone-A
+%R	4	D1030	Equipment Installation A	TT_Task	DT_FixDrtn	1	2	1	TK_NotStart	160.00	Zone-A
+%R	5	D1040	Foundation Slab B	TT_Task	DT_FixDrtn	1	3	1	TK_NotStart	200.00	Zone-B
+%R	6	D1050	Concrete Curing B	TT_Task	DT_FixDrtn	1	3	1	TK_NotStart	168.00	Zone-B
+%R	7	D1060	Electrical Rough-in B	TT_Task	DT_FixDrtn	1	3	1	TK_NotStart	120.00	Zone-B
+
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	pred_type	lag_hr_cnt
+%R	1	2	1	PR_FS	0.00
+%R	2	3	2	PR_FS	0.00
+%R	3	4	3	PR_FS	0.00
+%R	4	6	5	PR_FS	0.00
+%R	5	7	6	PR_FS	0.00
+
+%E
+

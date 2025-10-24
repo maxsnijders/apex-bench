@@ -1,0 +1,31 @@
+ERMHDR	9.0	2024-10-14	Project Management	P6 Professional
+%T	PROJWBS
+%F	proj_id	wbs_id	proj_node_flag	obs_id	wbs_name	wbs_short_name	parent_wbs_id
+%R	1	1	Y	1	Multi-Phase Development	MultiPhase	
+%R	1	2	N	1	Phase A - Demolition	Demo	1
+%R	1	3	N	1	Phase B - New Construction	NewConst	1
+%R	1	4	N	1	Phase C - Landscaping	Landscape	1
+
+%T	TASK
+%F	task_id	task_code	task_name	task_type	duration_type	proj_id	wbs_id	clndr_id	status_code	target_drtn_hr_cnt	total_float_hr_cnt
+%R	1	C1000	Site Survey	TT_Task	DT_FixDrtn	1	2	1	TK_NotStart	40.00	0.00
+%R	2	C1010	Demolition	TT_Task	DT_FixDrtn	1	2	1	TK_NotStart	160.00	0.00
+%R	3	C1020	Debris Removal	TT_Task	DT_FixDrtn	1	2	1	TK_NotStart	80.00	24.00
+%R	4	C1030	Foundation Work	TT_Task	DT_FixDrtn	1	3	1	TK_NotStart	240.00	0.00
+%R	5	C1040	Structural Steel	TT_Task	DT_FixDrtn	1	3	1	TK_NotStart	320.00	0.00
+%R	6	C1050	Exterior Envelope	TT_Task	DT_FixDrtn	1	3	1	TK_NotStart	200.00	0.00
+%R	7	C1060	Site Grading	TT_Task	DT_FixDrtn	1	4	1	TK_NotStart	80.00	48.00
+%R	8	C1070	Planting	TT_Task	DT_FixDrtn	1	4	1	TK_NotStart	120.00	48.00
+
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	pred_type	lag_hr_cnt
+%R	1	2	1	PR_FS	0.00
+%R	2	3	2	PR_FS	0.00
+%R	3	4	2	PR_FS	0.00
+%R	4	5	4	PR_FS	0.00
+%R	5	6	5	PR_FS	0.00
+%R	6	7	6	PR_FS	0.00
+%R	7	8	7	PR_FS	0.00
+
+%E
+
